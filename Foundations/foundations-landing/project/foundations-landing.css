@@ -5,6 +5,7 @@
 :root {
     --bg-color: #1F2937;
     --primary-color: #F9FAD8;
+    --white-color: #F9faf8;
     --secondary-color: #E5E7EB;
     --font-color: #1f2947;
     --quote-color: #1f2937;
@@ -56,16 +57,19 @@ body {
 .header-logo {
     width: auto;
     height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     a {
         height: 100%;
-        width: auto;
-    }
-
-    a img {
-        height: 100%;
-        width: auto;
-        object-fit: contain;        
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white-color);
+        text-decoration: none;
+        font-size: 24px;
     }
 }
 
@@ -151,7 +155,7 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 5% 0;
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 .carousel-title {
@@ -241,7 +245,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 .call-to-action-box {
@@ -286,5 +290,25 @@ body {
         border-radius: 5px;
         font-size: 18px;
         font-weight: 700;
+    }
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 10vh;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    gap: 4rem;
+
+    a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 400;
     }
 }
